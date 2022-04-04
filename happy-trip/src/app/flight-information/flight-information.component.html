@@ -1,0 +1,7 @@
+<!-- <img [src]="e.Gender == 'F'?ImgSrcF:ImgSrcM" class="card-img-top" alt="..." [appHighlight]> -->
+
+<div class="container">
+    <p *ngFor="let f of flights">{{f.FlightName}}
+        <img [src]="f.ImgUrl">
+    </p>
+</div>
