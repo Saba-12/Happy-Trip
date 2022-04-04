@@ -1,7 +1,16 @@
-<!-- <img [src]="e.Gender == 'F'?ImgSrcF:ImgSrcM" class="card-img-top" alt="..." [appHighlight]> -->
 
-<div class="container">
-    <p *ngFor="let f of flights">{{f.FlightName}}
-        <img [src]="f.ImgUrl">
-    </p>
+<div class="row">
+    <div class="card" style="width: 18rem; margin: 20px;" *ngFor="let f of flights">
+        <img [src]="f.img" style="margin-top: 10px; height:8rem;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><strong>Number: </strong>{{f.flightNo}}</p>
+          <p class="card-text"><strong>Arrival: </strong>{{f.arrivalTime}}</p>
+          <p class="card-text"><strong>Departure: </strong>{{f.departure}}</p>
+          <p class="card-text"><strong>Number of Seats: </strong>{{f.seatsAvailable}}</p>
+          <p class="card-text"><strong>Price: </strong>{{f.TicketPrice}}</p>
+          <p class="card-text"></p>
+        </div>
+    </div>
 </div>
+
+
