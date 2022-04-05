@@ -1,9 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FlightInformationComponent } from './flight-information/flight-information.component';
+import { BookingComponent } from './booking/booking.component';
+import { FlightsInfoComponent } from './flights-info/flights-info.component';
 
 const routes: Routes = [
-  {path:"",component:FlightInformationComponent}
+  {
+    path: '', component: FlightsInfoComponent
+  },
+  {
+    path: 'booking', component: BookingComponent
+  },
 ];
 
 @NgModule({

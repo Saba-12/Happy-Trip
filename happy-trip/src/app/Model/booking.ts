@@ -1,10 +1,9 @@
 import { Flight } from "./flight";
-import {Passenger} from "./passenger";
-import {Payment} from "./payment";
-
+import { Passenger } from "./passenger";
+import { Payment } from "./payment";
 
 export class Booking {
-    flight:Flight;
-    passenger:Passenger;
-    payment:Payment;
+    flightNo: number;
+    passenger: Passenger;
+    payment: Payment;
 }

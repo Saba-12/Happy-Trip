@@ -1,10 +1,10 @@
 export class Passenger {
-    Name:string;
-    DOB:Date;
-    MobileNo:number;
-    email:string;
-    gender:string;
-    address:string;
-    pinCode:number;
-    idNo:number;
+    PName: string;
+    DOB: Date;
+    mobileNo: number;
+    email: string;
+    gender: string;
+    address: string;
+    pinCode: number;
+    idNo: number;
 }
