@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 import { FlightsInfoComponent } from './flights-info/flights-info.component';
 import { BookingComponent } from './booking/booking.component';
 import { FormsModule } from '@angular/forms';
+import { PaymentComponent } from './payment/payment.component';
+import { ShowBookingComponent } from './show-booking/show-booking.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FlightsInfoComponent,
-    BookingComponent
+    BookingComponent,
+    PaymentComponent,
+    ShowBookingComponent
   ],
   imports: [
     BrowserModule,

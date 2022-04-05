@@ -3,7 +3,7 @@ import { Passenger } from "./passenger";
 import { Payment } from "./payment";
 
 export class Booking {
-    flightNo: number;
+    flight: Flight;
     passenger: Passenger;
     payment: Payment;
 }

@@ -1,6 +1,6 @@
 <h1>Available Flights</h1>
 <div class="row">
-    <div class="card text-dark mb-3" style="width: 21rem;margin: 20px;" *ngFor="let f of flights">
+    <div class="card text-dark mb-3" style="width: 20rem;margin: 20px;" *ngFor="let f of flights">
         <div class="card-header">
             <img [src]="f.img" style="margin-top: 10px;height: 10rem;" class="card-img-top" alt="...">
         </div>
@@ -10,7 +10,7 @@
             <p class="card-text">Departure time : {{f.depature}}</p>
             <p class="card-text">Seats Available : {{f.seatsAvailable}}</p>
             <p class="card-text">Ticket Price : {{f.price}}</p>
-            <button type="button" class="btn btn-primary" (click)="bookTicket(f.flightNo)">Book Ticket</button>
+            <button type="button" class="btn btn-primary" (click)="bookTicket(f)">Book Ticket</button>
         </div>
     </div>
 </div>

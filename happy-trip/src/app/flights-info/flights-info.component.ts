@@ -1,10 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Flight } from '../model/flight';
-import flightData from '../flights.json'
-import { Booking } from '../model/booking';
-import { BookingComponent } from '../booking/booking.component';
-import { Passenger } from '../model/passenger';
 import { Router,ActivatedRoute } from '@angular/router';
+import { FlightDataService } from '../services/flight-data.service';
 
 @Component({
   selector: 'app-flights-info',
@@ -13,24 +10,14 @@ import { Router,ActivatedRoute } from '@angular/router';
 })
 export class FlightsInfoComponent implements OnInit {
   flights: Flight[];
-  @Input() passenger: Passenger;
-  booking: Booking = new Booking;
-  flightNo: number;
-  constructor(private route: Router) {
-    this.passenger = new Passenger;
+  constructor(private router: Router,private service:FlightDataService) {
   }
 
   ngOnInit(): void {
-    this.flights = flightData;
+    this.flights = this.service.flightsData;
   }
-  bookTicket(item) {
-    this.flightNo = item;
-    console.log(item);
-    this.route.navigate(["booking"]);
-  }
-  addPass(item) {
-    this.booking.passenger = item;
-    this.booking.flightNo = this.flightNo;
-    console.log("done " + this.booking.passenger.PName + " " + this.booking.flightNo);
+  bookTicket(flight) {
+    this.service.setFlightDetail(flight);
+    this.router.navigate(['booking']);
   }
 }

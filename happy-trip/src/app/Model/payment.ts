@@ -1,4 +1,6 @@
 export class Payment {
-    id: string;
-    password: string;
+    cardType: string;
+    cardNo: number;
+    cvv: number;
+    expiryDate: Date;
 }
