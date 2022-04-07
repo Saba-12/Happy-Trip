@@ -1,26 +1,34 @@
 [
     {
-        "img": "https://flightchic.com/wp-content/uploads/2016/08/img_0401.jpg",
+        "img": "https://images.indianexpress.com/2020/05/indigo.jpg",
         "flightNo": 1,
         "arrivalTime": "04/05/2022 02:00",
         "depature": "04/05/2022 04:00",
         "seatsAvailable": 100,
-        "price": 10000
+        "price": 5500
     },
     {
-        "img": "https://th.bing.com/th/id/R.71c006ff2898176faac793f407defbaf?rik=ZTahNahOS4oPHw&riu=http%3a%2f%2fwww.airlinereporter.com%2fwp-content%2fuploads%2f2015%2f04%2fIMG_1778.jpg&ehk=Bx8g9U%2b0tj8UuzxhphRplggpn0Ycwmg3AXgzXSZitXY%3d&risl=&pid=ImgRaw&r=0",
+        "img": "https://static.routesonline.com/images/cached/newsarticle-294988-scaled-580x0.jpg",
         "flightNo": 2,
         "arrivalTime": "04/09/2022 12:00",
         "depature": "04/09/2022 02:00",
-        "seatsAvailable": 10,
-        "price": 100000
+        "seatsAvailable": 85,
+        "price": 1800
     },
     {
-        "img": "https://images.indianexpress.com/2020/05/indigo.jpg",
+        "img": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202201/air_india_reuters.joeg_1200x768.jpeg?p4dqL.Y5YYVUP83CY5DW2WMFPpmMqk13&size=770:433",
         "flightNo": 3,
         "arrivalTime": "04/11/2022 13:00",
         "depature": "04/11/2022 14:00",
-        "seatsAvailable": 4,
-        "price": 200000
+        "seatsAvailable": 77,
+        "price": 5000
+    },
+    {
+        "img": "https://static.routesonline.com/images/cached/newsarticle-276925-scaled-580x0.jpg",
+        "flightNo": 4,
+        "arrivalTime": "06/04/2022 04:00",
+        "depature": "06/04/2022 07:00",
+        "seatsAvailable": 75,
+        "price": 2800
     }
 ]
